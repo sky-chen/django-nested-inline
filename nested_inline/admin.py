@@ -227,7 +227,7 @@ class NestedModelAdmin(admin.ModelAdmin):
         context = {
             'title': _('Add %s') % force_text(opts.verbose_name),
             'adminform': adminForm,
-            'is_popup': "_popup" in request.REQUEST,
+            'is_popup': "_popup" in request.GET,
             'show_delete': False,
             'media': media,
             'inline_admin_formsets': inline_admin_formsets,
